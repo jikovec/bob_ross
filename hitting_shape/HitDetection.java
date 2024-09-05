@@ -6,7 +6,10 @@ import java.util.Scanner;
  * Usage:
  *      HitDetection is a program that checks whether the user provided point by its X and Y coordinates hits
  *      any of the user provided circles by their X and Y coordinates. Then the program returns an appropriate message with the information
- *      about the hit.
+ *      about which target was hit. The program also checks if the radius of the circles is not negative and accept only 8 double values.
+ *      
+ *      Expected input
+ * 
  * 
  * @author Anton Cipel
  * @ID 2128748
