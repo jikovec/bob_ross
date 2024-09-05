@@ -18,15 +18,23 @@ import java.util.Scanner;
 class HitDetection {
 
     public void run() {
-        Scanner scan = new Scanner(System.in); // Create a Scanner object
-        double xCircle1 = scan.nextDouble();
-        double yCircle1 = scan.nextDouble();
-        double rCircle1 = scan.nextDouble();
-        double xCircle2 = scan.nextDouble();
-        double yCircle2 = scan.nextDouble();
-        double rCircle2 = scan.nextDouble();
-        double guessX = scan.nextDouble();
-        double guessY = scan.nextDouble();
+        Scanner scanner = new Scanner(System.in); // Create a Scanner object
+        double xCircle1 = scanner.nextDouble();
+        double yCircle1 = scanner.nextDouble();
+        double rCircle1 = scanner.nextDouble();
+        double xCircle2 = scanner.nextDouble();
+        double yCircle2 = scanner.nextDouble();
+        double rCircle2 = scanner.nextDouble();
+        double guessX = scanner.nextDouble();
+        double guessY = scanner.nextDouble();
+
+        if (rCircle1 < 0 || rCircle2 < 0) {
+            System.out.println("The radius of the circle must be a positive number");
+            scanner.close();
+            return;
+        }
+
+        scanner.close();
 
         double distance1 = Math.pow((guessX - xCircle1), 2) + Math.pow((guessY - yCircle1), 2);
         double distance2 = Math.pow((guessX - xCircle2), 2) + Math.pow((guessY - yCircle2), 2);
