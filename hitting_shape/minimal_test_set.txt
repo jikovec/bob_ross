@@ -11,36 +11,36 @@ output      : The point hits the first circle
 
 
 TEST CASE 2
-motivation  :
-input       :
-output      :
+motivation  : When a negative radius for a circle is entered a error is outputed
+input       : 50 50 -10 10 5 10 1 -2
+output      : input error
 
 
 TEST CASE 3
-motivation  :
-input       :
-output      :
+motivation  : Example run, test a point in second circle
+input       : 100 100 10 0 0 10 5 5
+output      : The point hits the second circle
 
 
 TEST CASE 4
-motivation  :
-input       :
-output      :
+motivation  : Example run, test a point hits both circles
+input       : 0 0 20 5 5 10 4 4
+output      : The point hits both circles
 
 
 TEST CASE 5
-motivation  :
-input       :
-output      :
+motivation  : Example run, use negative coordinates for circles and point, hits the first circle
+input       : 0 0 3.1 -0.25 -0.13 1 -2.1 -2.03
+output      : The point hits the first circle
 
 
 TEST CASE 6
-motivation  :
-input       :
-output      :
+motivation  : Example run, test a point that hits second circle on border
+input       : -100 -100 20 0 0 5 0 5
+output      : The point hits the second circle
 
 
 TEST CASE 7
-motivation  :
-input       :
-output      :
+motivation  : Example run, test a point does not hit either circle
+input       : -20 5 10 40 -2 20 2300 2300
+output      : The point does not hit either circle
